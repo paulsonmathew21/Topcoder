@@ -1,0 +1,12 @@
+class GreaterGameDiv2(object):
+	def calc(self,snuke,sothe):
+		self.snuke=()
+		self.sothe=()
+		sn=0
+		so=0
+		for i in range(0,len(snuke)):
+			if snuke[i]>sothe[i]:
+				sn+=1
+			else:
+				so+=1
+		return sn

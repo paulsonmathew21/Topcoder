@@ -1,0 +1,10 @@
+class FoxAndGame(object):
+    def countStars(self,result):
+        self.result=()
+        stars=0
+        for i in range(len(result)):
+            for j in range(len(result[i])):
+                if  result[i][j]=='o':
+                    stars+=1
+        return stars
+	

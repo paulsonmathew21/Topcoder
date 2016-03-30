@@ -1,0 +1,11 @@
+class VowelLatin(object):
+	def translate(self,word):
+		vow="AaEeIiOoUu"
+		l=""
+		r=""
+		for i in word:
+			if i in vow:
+				r+=i
+			else:
+				l+=i
+		return l+r

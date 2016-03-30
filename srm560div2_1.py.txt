@@ -1,0 +1,11 @@
+class TypingDistance(object):
+    def minDistance(self,keyboard,word):
+        d=0
+        print keyboard, word
+        c=keyboard.index(word[0])
+
+        for i in word:
+            c_1=keyboard.index(i)
+            d+=abs(c_1-c)
+            c=c_1
+        return d

@@ -1,0 +1,10 @@
+class BunnyExamAfter(object):
+	def getMaximum(self,black,gray,white):
+		count = 0
+		for i in range(len(black)):
+			if black[i]!=gray[i] or black[i]!=white[i]:
+				if gray[i]==white[i]:
+					count+=2
+				else:
+					count+=1
+		return count 

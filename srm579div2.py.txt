@@ -1,0 +1,10 @@
+class PrimalUnlicensedCreatures(object):
+	def maxWins(self,initialLevel,grezPower):
+		grezPower=list(grezPower)
+		grezPower=sorted(grezPower)
+		count=0
+		for i in range(len(grezPower)):
+			if grezPower[i]<initialLevel:
+				initialLevel+=grezPower[i]/2
+				count+=1
+		return count

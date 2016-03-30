@@ -1,0 +1,14 @@
+class SimpleCalculator(object):
+    def calculate(self,input):
+        if '+' in input:
+            x=input.index('+')
+            return int(input[:x])+int(input[x+1:])
+        elif '-' in input:
+            x=input.index('-')
+            return int(input[:x])-int(input[x+1:])
+        elif '*' in input:
+            x=input.index('*')
+            return int(input[:x])*int(input[x+1:])
+        elif '/' in input:
+            x=input.index('/')
+            return int(input[:x])/int(input[x+1:])

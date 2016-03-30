@@ -1,0 +1,7 @@
+class BritishCoins(object):
+	def coins(self,pence):
+		pounds=pence/240
+		n=pence%240
+		shel=n/12
+		return [pounds,shel,n%12]
+		

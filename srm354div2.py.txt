@@ -1,0 +1,9 @@
+class Thimbles(object):
+	def thimbleWithBall(self,swaps):
+		pos=1
+		for i in range(len(swaps)):
+			if int(swaps[i][0])==pos:
+				pos=int(swaps[i][2])
+			elif int(swaps[i][2])==pos:
+				pos=int(swaps[i][0])
+		return pos

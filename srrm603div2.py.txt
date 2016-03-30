@@ -1,0 +1,16 @@
+class MiddleCode(object):
+    def encode(self,s):
+    	t=[]
+    	s=list(s)
+    	while len(s)>0:
+            if len(s)%2==0:
+            	if ord(s[len(s)/2]) <= ord(s[(len(s)/2)-1]):
+                    t.append(s[len(s)/2])
+                    del s[len(s)/2]
+                else:
+                    t.append(s[(len(s)/2)-1])
+                    del s[(len(s)/2)-1]
+            else:
+             	t.append(s[len(s)/2])
+                del s[len(s)/2]
+        return ''.join(t)

@@ -1,0 +1,13 @@
+class CostOfDancing(object):
+    def minimum(self,k,danceCost):
+        danceCost=list(danceCost)
+        self.k=k
+        self.danceCost=[]
+        m=len(danceCost)
+        for i in range(0,m):
+            for j in range(i+1,m):
+                if danceCost[i]>danceCost[j]:
+                    t=danceCost[i]
+                    danceCost[i]=danceCost[j]
+                    danceCost[j]=t
+        return sum(danceCost[:k])

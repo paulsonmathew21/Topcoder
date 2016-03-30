@@ -1,0 +1,14 @@
+    def minDistance(self,keyboard,word):
+        d=0
+        for i in range(len(word)):
+            for j in range(len(keyboard)):
+                if i==0 and word[i]==keyboard[j]:
+                    c=j
+                    break
+                else:
+                    if word[i]==keyboard[j]:
+                        c_1=j
+                        d+=abs(c_1-c)
+                        c=c_1
+        return d
+        

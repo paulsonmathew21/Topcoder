@@ -1,0 +1,10 @@
+class NamingConvention(object):
+	def toCamelCase(self,variableName):
+		variableName=list(variableName)
+		for i in range(0,(len(variableName)-1)):
+			if i==0:
+				variableName[i+1]=str(variableName[i+1]).lower()
+			elif variableName[i]=='_':
+				variableName[i+1]=str(variableName[i+1]).upper()
+		variableName = list(filter(lambda x: x!= '_', variableName))
+		return ''.join(variableName)

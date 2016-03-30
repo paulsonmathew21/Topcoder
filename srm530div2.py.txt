@@ -1,0 +1,6 @@
+class GogoXBallsAndBinsEasy(object):
+    def solve(self,T):
+        count=0
+        for i in range(0,len(T)/2):
+            count+=abs(T[i]-T[len(T)-1-i])
+        return count

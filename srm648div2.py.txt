@@ -1,0 +1,11 @@
+class KitayutaMart2(object):
+	def numBought(self,K,T):
+		t=K
+		i=0
+		while(t<=T):
+			if i==0:
+				i+=1
+			else:
+				t+=(2**i)*K
+				i+=1
+		return i-1

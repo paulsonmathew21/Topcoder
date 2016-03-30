@@ -1,0 +1,7 @@
+class MicroStrings(object):
+	def makeMicroString(self,A,D):
+		l=[]
+		for i in range(A+D):
+			if A-i*D >= 0:
+				l.append(str(A-i*D))
+		return ''.join(l)

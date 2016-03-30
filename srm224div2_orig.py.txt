@@ -1,0 +1,10 @@
+class InsideOut(object):
+    def unscramble(self,line):
+        r=s=""
+        for i in range(len(line)/2,len(line)):
+            r+=line[i]
+        for i in range(0,len(line)/2):
+            r+=line[i]
+        for i in range(len(r)-1,-1,-1):
+            s+=r[i]
+        return s

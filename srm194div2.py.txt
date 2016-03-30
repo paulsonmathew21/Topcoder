@@ -1,0 +1,9 @@
+class Soccer(object):
+	def maxPoints(self,wins,ties):
+		self.wins=[]
+		self.ties=[]
+		m=0
+		for i in range(len(wins)):
+			r=wins[i]*3+ties[i]
+			m=max(m,r)
+		return m

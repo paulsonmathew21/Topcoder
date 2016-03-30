@@ -1,0 +1,7 @@
+class SumOfPower(object):
+    def findSum(self,array):
+        count=0
+        for i in range(0,len(array)):
+            for j in range(i,len(array)):
+                count+=sum(array[i:j+1])
+        return count

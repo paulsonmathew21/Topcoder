@@ -1,0 +1,10 @@
+class BettingMoney(object):
+	def moneyMade(self,amounts,centsPerDollars,finalResult):
+		total=0
+		s=0
+		x=centsPerDollars[finalResult]*amounts[finalResult]
+		for i in range(len(amounts)):
+			if i!=finalResult:
+				s+=amounts[i]
+		s=s*100
+		return s-x

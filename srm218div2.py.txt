@@ -1,0 +1,10 @@
+class AccessLevel(object):
+	def canAccess(self,rights,minPermission):
+		result=""
+		for i in rights:
+			if i>=minPermission:
+				result+='A'
+			else:
+				result+='D'
+		return result
+				

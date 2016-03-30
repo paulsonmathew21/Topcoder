@@ -1,0 +1,5 @@
+class EscapeFromRectangle(object):
+	def shortest(self,x,y,w,h):
+		p=min([x,abs(x-w)])
+		q=min([y,abs(y-h)])
+		return min(p,q)

@@ -1,0 +1,3 @@
+class BoundingBox(object):
+	def smallestArea(self,X,Y):
+		return (max(X)-min(X))*(max(Y)-min(Y))

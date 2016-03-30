@@ -1,0 +1,10 @@
+class DengklekTryingToSleep(object):
+	def minDucks(self,ducks):
+		a=max(ducks)
+		b=min(ducks)
+		c=0
+		l=[i for i in range(b,a)]
+		for i in l:
+			if i not in ducks:
+				c+=1
+		return c

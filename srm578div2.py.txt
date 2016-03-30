@@ -1,0 +1,4 @@
+class DeerInZooDivTwo(object):
+	def getminmax(self,N,K):
+		result=[max(N-K,0),N-(K+1)/2]
+		return result

@@ -1,0 +1,13 @@
+class TheBlackJackDivTwo(object):
+	def score(self,cards):
+		count = 0
+		for i in range(len(cards)):
+			if cards[i][0]=='2' or cards[i][0]=='3' or cards[i][0]=='4' or cards[i][0]=='5' or cards[i][0]=='6' or cards[i][0]=='7' or cards[i][0]=='8' or cards[i][0]=='9':
+				count+=int(cards[i][0])
+			elif cards[i][0]=='T':
+				count+=10
+			elif cards[i][0]=='A':
+				count+=11
+			else:
+				count+=10
+		return count

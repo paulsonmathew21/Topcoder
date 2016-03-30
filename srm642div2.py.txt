@@ -1,0 +1,7 @@
+class ForgetfulAddition(object):
+    def minNumber(self,expression):
+        s=[]
+        expression=list(expression)
+        for i in range(1,len(expression)):
+            s.append(int(''.join(expression[:i]))+int(''.join(expression[i:])))
+        return min(s)

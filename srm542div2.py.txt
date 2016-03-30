@@ -1,0 +1,10 @@
+class WorkingRabbits(object):
+	def getEfficiency(self,profit):
+		count=0
+		s=0
+		for i in range(len(profit)):
+			for j in range(len(profit[i])):
+				s+=int(profit[i][j])
+				if i!=j:
+					count+=1
+		return s/(count*1.0)

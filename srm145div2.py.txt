@@ -1,0 +1,8 @@
+class ImageDithering(object):
+	def count(self,dithered,screen):
+		count=0
+		for i in range(len(screen)):
+			for j in range(len(screen[i])):
+				if screen[i][j] in dithered:
+					count+=1
+		return count

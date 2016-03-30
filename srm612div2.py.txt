@@ -1,0 +1,8 @@
+class LeftAndRightHandedDiv2(object):
+	def count(self,S):
+		c=0
+		for i in range(0,len(S)-1):
+			for j in range(1,len(S)):
+				if S[i:j]=="RH":
+					c+=1
+		return c

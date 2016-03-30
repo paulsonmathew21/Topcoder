@@ -1,0 +1,11 @@
+class CssPropertyConverter(object):
+    def getCamelized(self,cssPropertyName):
+        cssPropertyName=list(cssPropertyName)
+        result=""
+        for i in range(len(cssPropertyName)):
+            if cssPropertyName[i] == '-':
+                cssPropertyName[i+1]=cssPropertyName[i+1].upper()
+        for i in cssPropertyName:
+            if i!='-':
+                result+=i
+        return result

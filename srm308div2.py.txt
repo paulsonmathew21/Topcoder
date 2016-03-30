@@ -1,0 +1,8 @@
+class MedianOfNumbers(object):
+    def findMedian(self,numbers):
+        numbers=list(numbers)
+        if len(numbers)%2!=0:
+            numbers=sorted(numbers)
+            return int(numbers[(len(numbers)/2)])  
+        else:
+            return -1

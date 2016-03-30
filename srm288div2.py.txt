@@ -1,0 +1,13 @@
+class AccountBalance(object):
+    def processTransactions(self,startingBalance,transactions):
+        for i in range(len(transactions)):
+            for j in range(len(transactions[i])):
+                if transactions[i][0]=='C':
+                    y=int(transactions[i][2:])
+                    startingBalance+=y
+                    break
+                elif transactions[i][0]=='D':
+                    y=int(transactions[i][2:])
+                    startingBalance-=y
+                    break
+        return startingBalance
